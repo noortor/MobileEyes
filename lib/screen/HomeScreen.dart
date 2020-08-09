@@ -14,26 +14,26 @@ class HomeScreen extends StatelessWidget {
 
     return Scaffold(
         appBar: AppBar(
-          title: Text('Join an event'),
+          title: Text('Grow Springs'),
         ),
         body: _listView(),
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.supervisor_account),
-              title: Text('Join'),
+              icon: Icon(Icons.people),
+              title: Text('Grow'),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.calendar_today),
-              title: Text('Calendar'),
+              title: Text('View'),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.add_location),
-              title: Text('Create'),
+              title: Text('Seed'),
             ),
           ],
           currentIndex: 0,
-          selectedItemColor: Colors.blue,
+          selectedItemColor: Colors.green,
           onTap: (e) {
             if (e == 1) {
               Navigator.of(context).push(

@@ -67,6 +67,7 @@ flutter:
     - assets/images/ic_preview_2.png
     - assets/images/ic_preview_3.png
     - assets/images/ic_preview_4.png
+    - assets/images/mobile_eyes.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

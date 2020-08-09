@@ -11,8 +11,8 @@ void main() => runApp(
         title: 'MobileEyes',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: Colors.blue,
-          accentColor: Colors.blue[800],
+          primarySwatch: Colors.green,
+          accentColor: Colors.green[800],
         ),
         home: SplashScreen(),
         routes: <String, WidgetBuilder>{

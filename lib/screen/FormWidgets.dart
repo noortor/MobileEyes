@@ -30,7 +30,7 @@ class _FormWidgetsState extends State<FormWidgets> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Create an event'),
+          title: Text('Seed a Spring'),
         ),
         body: Form(
           key: _formKey,
@@ -108,7 +108,7 @@ class _FormWidgetsState extends State<FormWidgets> {
                             decoration: InputDecoration(
                               border: const OutlineInputBorder(),
                               filled: true,
-                              hintText: 'Add any additional info...',
+                              hintText: 'Please bring...',
                               labelText: 'Additional Info',
                             ),
                             onChanged: (value) {
@@ -119,14 +119,14 @@ class _FormWidgetsState extends State<FormWidgets> {
                           RaisedButton(
                               color: Colors.blueAccent,
                               child: Text(
-                                'Create Event',
+                                'Plant Seed',
                                 style: TextStyle(
                                   color: Colors.white,
                                 ),
                               ),
                               onPressed: () {
                                 getItemList().add(Item(
-                                  id: 3,
+                                  id: 6,
                                   name: title,
                                   description: description,
                                   purpose: purpose,
@@ -134,7 +134,7 @@ class _FormWidgetsState extends State<FormWidgets> {
                                   address: address,
                                   time: date,
                                   tags: tags,
-                                  isGoing: false,
+                                  isGoing: true,
                                 ));
                                 Navigator.of(context).push(
                                     CupertinoPageRoute<Null>(
@@ -161,20 +161,20 @@ class _FormWidgetsState extends State<FormWidgets> {
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              icon: Icon(Icons.supervisor_account),
-              title: Text('Join'),
+              icon: Icon(Icons.people),
+              title: Text('Grow'),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.calendar_today),
-              title: Text('Calendar'),
+              title: Text('View'),
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.add_location),
-              title: Text('Create'),
+              title: Text('Seed'),
             ),
           ],
           currentIndex: 2,
-          selectedItemColor: Colors.blue,
+          selectedItemColor: Colors.green,
           onTap: (e) {
             if (e == 0) {
               Navigator.of(context).push(

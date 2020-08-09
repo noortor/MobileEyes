@@ -10,7 +10,7 @@ class CalendarApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Event Calendar'),
+        title: Text('View My Springs'),
       ),
       body: MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -40,16 +40,16 @@ class _MyHomePageState extends State<MyHomePage> {
           bottomNavigationBar: BottomNavigationBar(
             items: const <BottomNavigationBarItem>[
               BottomNavigationBarItem(
-                icon: Icon(Icons.supervisor_account),
-                title: Text('Join'),
+                icon: Icon(Icons.people),
+                title: Text('Grow'),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.calendar_today),
-                title: Text('Calendar'),
+                title: Text('View'),
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.add_location),
-                title: Text('Create'),
+                title: Text('Seed'),
               ),
             ],
             currentIndex: 1,
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
           startTime: item.time,
           endTime: DateTime.now().add(Duration(minutes: 10)),
           subject: item.name,
-          color: Colors.blue,
+          color: Colors.green[400],
           startTimeZone: '',
           endTimeZone: '',
         ));

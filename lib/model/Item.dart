@@ -20,14 +20,14 @@ class Item {
     @required this.time,
     @required this.tags,
     @required this.isGoing,
-    this.distance,
+    @required this.distance,
   });
 }
 
 List<Item> _itemList = [
   Item(
     id: 0,
-    name: 'March For Justice (#blm)',
+    name: 'March for Justice (#blm)',
     address: '803 Mt Vernon Pl NW, D.C., 20010',
     purpose: 'Creating an equal world for all people.',
     description:
@@ -39,7 +39,7 @@ List<Item> _itemList = [
   ),
   Item(
       id: 1,
-      name: 'Climate Strike (#climatechange)',
+      name: 'National Climate Strike (#climatechange)',
       description:
           """Throughout the week, activists around the world will be tackling localized climate issues, such as protesting pipeline expansions and highlighting the political influence of the fossil fuel industry. Check out globalclimatestrike.net for more information and for a list of events across the world. Organizers are hoping that this could be the largest global climate demonstration ever.
 
@@ -55,13 +55,13 @@ Greta Thunberg, the 16-year-old Swedish activist who started demanding political
   Item(
     id: 2,
     name: 'AUHSD School District Protest (#equity)',
-    address: '15 Shoreline Hwy, Bethesda, MD, 20588',
+    address: '2071 Wilson St, DC, 20511',
     description:
         """Most districts in Orange County are still deciding on how to reopen their schools for the fall semester. Some, like Tustin Unified, are offering parents the option to decide between fully online learning or a hybrid model that would combine some in-person instruction with distance learning. Others are waiting for further guidance from health officials.
 
 Even without a final decision, some school districts on Tuesday said that even if campuses either fully or partially reopen, they won't return without requiring masks and social distancing, despite the Board's guidance""",
-    purpose: 'Bring equity for all students.',
-    distance: '1.1mi',
+    purpose: 'Achieve equity for all students.',
+    distance: '0.8mi',
     time: DateTime.fromMillisecondsSinceEpoch(1597939200000),
     tags: ['equity', 'educationrights', 'history'],
     isGoing: false,
@@ -76,13 +76,59 @@ Most DACA recipients have spent the majority of their lives in the U.S., many ha
 
 The U.S. House of Representatives passed the American Dream and Promise Act, H.R. 6, one year ago. H.R. 6 would give a path to citizenship for Dreamers. Now, in the wake of SCOTUS’ ruling, the U.S. Senate must act in order to protect Dreamers from the risk of deportation and family separation. The USCCB supports the DREAM Act, which includes a path to citizenship, and sent a letter to each Senator asking that they the support S. 874, the DREAM Act of 2019. Additionally, USCCB supports efforts to introduce a Senate companion to H.R. 6 as well.""",
       purpose: 'Build bridges, not walls!',
-      distance: '1.1mi',
-      address: '2071 Wilson St, DC, 20511',
+      distance: '0.9mi',
+      address: '940 Carver St, DC, 20511',
       time: DateTime.fromMillisecondsSinceEpoch(1598135400000),
       tags: ['equalrights', 'immigration'],
       isGoing: false),
+  Item(
+    id: 4,
+    name: 'Citizens for Racial Equality (#blm)',
+    purpose: 'Overturn qualified immunity & other abusive legal shields',
+    address: 'Washington Square, DC, 20600',
+    distance: '1.1mi',
+    tags: ['blm', 'policereform', 'racialjustice'],
+    time: DateTime.fromMillisecondsSinceEpoch(1598137200000),
+    description: "",
+    isGoing: false,
+  ),
+  Item(
+    id: 5,
+    name: 'Make the People Heard (#democracy)',
+    purpose: 'Hold our elected officials accountable',
+    address: 'Washington Monument, DC, 20600',
+    distance: '1.1mi',
+    tags: ['democracy', 'representation'],
+    time: DateTime.fromMillisecondsSinceEpoch(1598221800000),
+    description: '',
+    isGoing: true,
+  ),
+  Item(
+    id: 6,
+    name: 'Religious Freedom March (#equalrights)',
+    purpose: 'End bigoted policies in the US that discriminate on religion',
+    address: 'Capitol Hill, DC, 20020',
+    distance: '1.2mi',
+    tags: ['equalrights'],
+    time: DateTime.fromMillisecondsSinceEpoch(1598308200000),
+    description: "",
+    isGoing: false,
+  ),
+  Item(
+    id: 7,
+    name: "Women's March (#feminism)",
+    purpose: '',
+    address: '620 Williams St, DC, 20020',
+    distance: '1.2mi',
+    tags: [],
+    time: DateTime.fromMillisecondsSinceEpoch(1598309200000),
+    description: '',
+    isGoing: false,
+  )
 ];
 
 List<Item> getItemList() {
   return _itemList;
 }
+
+// '15 Shoreline Hwy, Bethesda, MD, 20588'
