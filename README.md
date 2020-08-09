@@ -1,6 +1,7 @@
-# MobileEyes
+# MobileEyes: Watch activism blossom.
 
-A Flutter application to mobilize your movement.
+<p align="center">
+  <img src="/assets/images/mobile_eyes.png">
+</p>
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+***
